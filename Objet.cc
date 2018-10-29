@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-class Objet : public Position {
-private:
-  Pos
-
-public:
-  Objet (arguments);
-  virtual ~Objet ();
-=======
 #include <iostream>
 using namespace std;
 
@@ -27,5 +18,4 @@ public:
       this->p.initialisation(longueur, largeur);
   }
   void setPv() = 0;
->>>>>>> c125b7e47d11771f84859898772992599f0d5f48
 };
