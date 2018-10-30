@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -17,5 +18,5 @@ public:
   {
       this->p.initialisation(longueur, largeur);
   }
-  void setPv() = 0;
+  void setPv(int PV) this->Pv = PV;
 };

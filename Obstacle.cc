@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -23,11 +24,11 @@ public:
 
   void setPv(int longueur, int largeur)
   {
-    this->o->Pv= longueur * largeur;
+    this->o.setPv(longueur*largeur);
   }
   void setObstacle(int longueur , int largeur)
   {
     this->setPv(longueur,largeur);
-    this->o->setPos(longueur, largeur);
+    this->o.setPos(longueur, largeur);
   }
 };
