@@ -1,22 +1,23 @@
+#include "Objet.hh"
 
-#include <iostream>
-using namespace std;
+Objet::Objet()
+{
+  this->p= Position();
+  this->Pv=0;
+}
 
-class Objet : public Position {
-private:
-  Position p;
-  int Pv;
 
-public:
-  Objet()
-  {
-    this->p=new Position();
-    this->Pv=0;
-  }
-  virtual ~Objet (){};
-  void setPos(int longueur, int largeur)
-  {
-      this->p.initialisation(longueur, largeur);
-  }
-  void setPv(int PV) this->Pv = PV;
-};
+void Objet::setPos(int longueur, int largeur)
+{
+  this->p.initialisation(longueur, largeur);
+}
+
+int Objet::getPv()
+{
+  return Pv;
+}
+
+void Objet::setPv(int pv)
+{
+  this->Pv=pv;
+}
